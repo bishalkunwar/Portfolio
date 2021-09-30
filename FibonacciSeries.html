@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> Fibonacci Series</title>
+</head>
+
+<body>
+    <h3> Program to generate the Fibonacci Series </h3>
+    <script type="text/javascript">
+        var number = prompt("Enter the number to generate the fibonacci series:", " ");
+        var num1 = 0;
+        var num2 = 1;
+
+        document.write("The fibonacci series upto the given number are as follows: ");
+        document.write("", num1, " ");
+
+        var i, next;
+        for (i = 2; i < number; i++) {
+            next = num1 + num2;
+            document.write("", num2, " ");
+            num1 = num2;
+            num2 = next;
+        }
+    </script>
+</body>
+
+</html>
